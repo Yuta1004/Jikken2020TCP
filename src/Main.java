@@ -13,7 +13,7 @@ public class Main {
      */
     public static void main(String[] args) {
         // サーバ初期化 -> 起動
-        server = new Server(6000);
+        server = new Server(50000);
         server.addEvent("rabbit", (msg) -> { return "Is the order a rabbit?"; });
         server.addEvent("nityc", (msg) -> { return "National Institute of Technology, Yuge College"; });
         server.start();

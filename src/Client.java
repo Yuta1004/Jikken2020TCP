@@ -18,7 +18,7 @@ class Client {
         hostname = scanner.nextLine();
 
         // コネクション確立
-        Socket socket = new Socket(hostname, 6000);
+        Socket socket = new Socket(hostname, 50000);
 
         // Reader, Write初期化
         BufferedReader brsrv = new BufferedReader(new InputStreamReader(socket.getInputStream()));
